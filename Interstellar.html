@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <!-- Barra di navigazione a scomparsa -->
+    <nav class="navbar navbar-dark bg-dark fixed-top nav-custom">
+        <div class="container-fluid">
+            <a class="navbar-brand text-danger" href="#">Nolan Film - Interstellar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title text-light-emphasis" id="offcanvasDarkNavbarLabel">Menù</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3" >
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./index.html">Homepage</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Registrati</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Film
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-dark">
+                                <li><a class="dropdown-item" href="./Interstellar.html">Interstellar</a></li>
+                                <li><a class="dropdown-item" href="./Inception.html">Inception</a></li>
+                                
+                                <li><a class="dropdown-item" href="./Ilcavaliereoscuro.html">Il Cavaliere Oscuro</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="d-flex mt-3" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Cerca" aria-label="Search"/>
+                        <button class="btn btn-success" type="submit">Cerca</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+    
+    <!-- Header -->
+    
+    <header class="container mt-5 pt-5 d-flex justify-content-center">
+        <div class="row">
+            <div class="col-12">
+                <h1 class="shadow-lg p-3 mb-5 bg-warning-subtle rounded-4 "">INTERSTELLAR</h1>
+            </div>
+            
+        </div>
+        
+    </header>
+    
+    
+    <section class="container-fluid">
+        
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-8">
+                <div id="carouselExampleIndicators" class="carousel slide">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./Media/Interstellar1.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./Media/Interstellar2.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./Media/Interstellar3.jpg" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+            </div>
+        </div>
+    </section>
+    
+    
+    <section class="container-fluid mt-4 mb-4">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-6 d-flex justify-content-center">
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                    Clicca per leggere la storia
+                </button>
+                
+                <!-- Modal -->
+                <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-scrollable">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="staticBackdropLabel">Interstellar</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                Nella seconda metà del ventunesimo secolo l'ex pilota della NASA Joseph Cooper è costretto a lavorare come agricoltore a causa di una carestia globale causata dalla peronospora, da tempeste di sabbia e raccolti insoddisfacenti. Queste piaghe hanno reso la vita sulla Terra sempre più difficile. L'agricoltura ha assorbito la quasi totalità delle energie della società, escludendo molte altre attività ritenute inutili, tra cui qualsiasi ricerca scientifica e spaziale. Le scuole governative scoraggiano attivamente gli allievi dallo studiare argomenti come l'esplorazione spaziale, sostenendo che eventi storici come lo sbarco sulla Luna siano menzogne della politica e che organizzazioni scientifiche come la NASA siano state chiuse perché spreco di denaro e risorse.
+                                Cooper è vedovo e vive nella sua fattoria insieme al suocero Donald, al figlio Tom e alla figlia di dieci anni Murph; quest'ultima assiste a strani fenomeni paranormali che avvengono nella libreria della sua camera da letto, come la caduta di libri, che ritiene siano opera di un fantasma che comunica con lei attraverso la libreria. Dopo una delle tante tempeste di sabbia, Cooper nota che la sabbia sul pavimento della camera da letto di Murph ha formato delle strisce che sembrano avere un ordine preciso; interpretandole come codice binario, risultano essere una serie di coordinate geografiche. Cooper e Murph raggiungono il luogo delle coordinate, apparentemente un complesso abitativo abbandonato, dove vengono subito catturati: il luogo si dimostra quindi essere in realtà una struttura governativa segreta della NASA, mai davvero chiusa e solo mantenuta segreta dal governo. Qui incontrano il professor John Brand, il quale spiega che la NASA è stata segretamente incaricata dallo Stato di trovare un nuovo pianeta su cui trasferire tutta l'umanità, ormai a rischio di estinzione in quanto l'aspettativa di vita sulla Terra è al massimo di altre due generazioni. Indagando su un wormhole apparso misteriosamente 48 anni prima vicino a Saturno, la NASA aveva lanciato la missione spaziale Lazarus, mandando 12 astronavi su altrettanti pianeti per poterli studiare e comprendere se siano in grado di sostenere la vita; gli scienziati che si trovavano su tre di queste astronavi, i dottori Miller, Mann ed Edmunds, avevano inviato dati promettenti sull'abitabilità di altrettanti pianeti.
+            
+                                Brand afferma di essere al lavoro su un'equazione relativa alla gravità per rendere possibile la costruzione di moduli di trasporto spaziali necessari per evacuare tutta l'umanità dalla Terra, e chiede a Cooper di comandare un viaggio interstellare esplorativo sui tre pianeti della missione Lazarus con lo scopo di fornire ulteriori riscontri; il protagonista accetta, ma la figlia Murph è estremamente contraria alla sua partenza e, pur sapendo che forse non potrà mai più rivederlo, si rifiuta di salutarlo. Cooper quindi lascia ai familiari la gestione della fattoria e parte insieme agli scienziati Romilly, Doyle e Amelia Brand (figlia del professore) ed ai robot senzienti CASE e TARS, gestendo l'enorme stazione spaziale Endurance, dotata di moduli volanti più piccoli e maneggevoli. La nave è diretta verso lo stesso cunicolo spazio-temporale che un decennio prima avevano attraversato gli scienziati della missione Lazarus.
+                                
+                                L'Endurance passa attraverso il wormhole arrivando in un'altra galassia con un sistema planetario in orbita attorno a un buco nero supermassiccio chiamato Gargantua. L'equipaggio decide di approdare inizialmente sul pianeta visitato dall'astronauta Miller; esso è così vicino al buco nero che la gravità altera pesantemente lo scorrere del tempo, al punto che, per ogni ora trascorsa sul pianeta, sulla Terra trascorrono sette anni. Atterrati, gli scienziati scoprono un pianeta oceanico con enormi maremoti e senza terraferma; a causa di un'enorme onda di marea che travolge il modulo, Doyle muore annegato, mentre Amelia e Cooper riescono a tornare sull'Endurance solo dopo alcune ore e vengono a conoscenza che nella scala di tempo terrestre l'incidente è durato ben 23 anni da Romilly, il quale, essendo rimasto a bordo all'esterno dell'alterazione temporale, è visibilmente invecchiato. Cooper, turbato dalla notizia, riproduce i messaggi dalla Terra e apprende di essere diventato nonno, che Murph ha raggiunto la sua stessa età ed è diventata una scienziata sotto l'ala del professor Brand, con il quale sta ancora cercando di risolvere l’equazione sui campi gravitazionali.
+                                
+                                A causa dell'incidente avvenuto sul pianeta di Miller, l'equipaggio deve ora decidere quale dei due pianeti rimasti sia il più opportuno da raggiungere: Cooper propende per quello di Mann, che è più vicino ed è anche l'unico dal quale arrivano ancora informazioni, mentre Amelia propende per quello di Edmunds, che, secondo le informazioni ricevute, presenta le caratteristiche più vicine a quelle terrestri. Cooper, tuttavia, viene a conoscenza che Amelia ed Edmunds avevano avuto una relazione sentimentale, quindi ritiene che la scienziata stia solo facendo un tentativo egoistico di rivedere il suo amato e sabota la sua proposta, preferendo attraccare sul pianeta di Mann, che però si rivela inospitale e completamente ghiacciato dall'ammoniaca. Mann comunque è ancora vivo ed il gruppo, una volta giunto nella sua base, lo risveglia dall'ibernazione.
+                                
+                                Sulla Terra, intanto, Murph apprende con sgomento dal professor Brand, in punto di morte, che egli aveva rinunciato molto tempo prima a risolvere la sua equazione, essendosi reso conto che non poteva riuscirci senza alcuni dati disponibili solo all'interno di un buco nero. Brand rivela quindi di non aver mai avuto fede nella missione di evacuare l'umanità dalla Terra e che stava invece pianificando di stabilire una nuova colonia umana grazie a cinquemila embrioni congelati portati a bordo da Cooper, sua figlia Amelia e gli altri, in un altro sistema planetario. Murph, furiosa e affranta, trasmette queste informazioni all'equipaggio, gettando nello sconforto sia Cooper sia Amelia. Mann invece rivela inaspettatamente di essere già a conoscenza del vero piano del professor Brand. Cooper non accetta tale situazione e decide, avendo fede nelle informazioni ottimistiche che Mann ha ottenuto circa il nucleo del suo pianeta, di tornare a casa, ora che la missione può considerarsi compiuta. All'improvviso però Mann attacca Cooper e prende possesso di uno dei due moduli leggeri dell'Endurance atterrati sul pianeta: Mann aveva volutamente falsificato i dati riportati sul suo pianeta fin dall'inizio, perché desiderava egoisticamente essere salvato e raggiungere un altro dei due pianeti. Tende pertanto un'imboscata a Cooper, al quale riesce a perforare il casco per farlo soffocare, e fa saltare in aria la sua base, uccidendo Romilly. Mann tenta poi di impossessarsi del'Endurance, ma non riesce ad attraccare correttamente, facendo esplodere il portello e perdendo la vita nell'azione, mentre Cooper, salvato in tempo, raggiunge insieme ad Amelia l'Endurance danneggiata con il secondo modulo leggero e i due riescono a stabilizzare la navicella con una pericolosa manovra.
+                                
+                                Con risorse limitate per utilizzare i motori, Cooper propone una manovra di fionda gravitazionale intorno a Gargantua, sfruttando la gravità del buco nero per spingerli verso il pianeta di Edmunds; la manovrà, della durata di poche ore, causerà ulteriori 51 anni di ritardo rispetto al tempo terrrestre, ma non vi sono alternative. Essendo troppo pesanti, Cooper pianifica segretamente di sacrificarsi all'ultimo minuto, staccandosi con una navicella dall'Endurance e lasciandosi cadere dentro al buco nero, lasciando solo Amelia a completare il viaggio. Cooper quindi cade oltre l'orizzonte degli eventi, ma non muore schiacciato dalla gravità del buco nero, ritrovandosi invece all'interno di un tesseratto a quattro dimensioni dove è rappresentata la libreria della camera da letto di Murph in tutti i momenti della sua vita, deducendo che, così come il wormhole, esso è stato collocato lì da futuri esseri viventi con accesso a dimensioni superiori che hanno scelto Murph (e non lui) per salvare l'umanità. Si rende anche conto che, sfruttando le proprietà della gravità, è in grado di poter spostare oggetti sulla libreria attraverso il tempo e le dimensioni, capendo quindi era proprio lui a comunicare con Murph e con il sé stesso del passato.
+                                
+                                Sulla Terra, la Murph adulta torna nella casa della sua infanzia, ormai posseduta dal fratello Tom. Convinta che i fenomeni che avevano luogo nella sua camera da letto non fossero casuali, nota che la lancetta dei secondi del vecchio orologio regalatole dal padre prima di abbandonarla si muove in modo irregolare: interpretando gli anomali ticchettii come codice Morse, riesce a capire che Cooper le sta inviando informazioni dal tesseratto e capisce quindi che il fantasma era proprio suo padre. Cooper fornisce alla figlia i dati scientifici sulla singolarità del buco nero in cui si trova, e la donna li usa per risolvere l'equazione della gravità del professore, permettendo così all'umanità di costruire le navi spaziali per fuggire dalla Terra.
+                                
+                                Cooper, una volta terminata la trasmissione dei dati, viene espulso dal tesseratto e rimandato indietro attraverso il cunicolo spazio-temporale. Una nave spaziale "ranger" riesce quindi a recuperarlo mentre orbita attorno a Saturno. A causa dello slittamento del tempo intorno a Gargantua, nella scala di tempo terrestre il protagonista avrebbe l'età di 124 anni e sarebbe partito per la missione 90 anni prima, sebbene non sia affatto invecchiato. Si sveglia in una stazione spaziale cilindrica costruita grazie ai dati da lui raccolti e si riunisce con Murph, ormai molto anziana e celebre scienziata, che ha permesso agli esseri umani di sopravvivere all'estinzione. Sentendo di essere vicina alla morte, Murph consiglia al padre di non aspettare di vederla morire e lo esorta a trovare Amelia Brand, che potrebbe essersi stabilita sul terzo pianeta dell'esplorazione, il quale potrebbe diventare la nuova casa dell'umanità. Cooper prende un'astronave e parte per il suo nuovo viaggio. Sull'altro pianeta, Amelia sta costruendo una nuova colonia umana: si toglie il casco e respira l'aria, dimostrando che il pianeta è in grado di sostenere la vita.
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Chiudi</button>
+                                <button type="button" class="btn btn-primary">Ho letto!</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+        
+            </div>
+        </div>    
+    </div>
+    
+    
+    
+</section>
+
+
+    
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
